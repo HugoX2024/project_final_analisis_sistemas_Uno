@@ -134,3 +134,50 @@ php artisan test
 ## Entrega esperada
 
 El estudiante debe trabajar sobre su propio fork del repositorio y entregar en Canvas el enlace al repositorio forkeado, junto con una breve descripción del módulo implementado y los commits principales que evidencian su avance.
+
+---
+
+## Entrega personal - Documentacion funcional del modulo
+
+### Modulo trabajado
+
+Documentacion funcional del modulo de autenticacion y acceso por tenant.
+
+El trabajo realizado se enfoca en documentar como usar, ejecutar y verificar un modulo funcional especifico del sistema. Se eligio el modulo de autenticacion porque ya contiene un flujo completo y verificable: tenant, registro, login, token JWT, consulta de usuario autenticado, renovacion de token y cierre de sesion.
+
+### Ubicacion de la evidencia
+
+La evidencia agregada se encuentra en la carpeta `docs/`:
+
+- `docs/sprint-1-analisis.md`: analisis inicial del modulo seleccionado.
+- `docs/documentacion-funcional-autenticacion.md`: guia funcional de uso, ejecucion y verificacion.
+- `docs/uml/`: diagramas UML del modulo documentado.
+
+### Evidencia por sprint
+
+| Sprint | Commit | Evidencia |
+|--------|--------|-----------|
+| Sprint 1 | `29e0fc3` | Analisis inicial del modulo de autenticacion y acceso por tenant. |
+| Sprint 2 | `0e86e78` | Guia funcional para ejecutar, usar y verificar el modulo. |
+| Sprint 3 | `f438705` | Diagramas UML: caso de uso, clases y secuencia. |
+
+### Como revisar la solucion
+
+1. Revisar la carpeta `docs/`.
+2. Leer `docs/documentacion-funcional-autenticacion.md`.
+3. Revisar los diagramas en `docs/uml/`.
+4. Ejecutar las verificaciones recomendadas:
+
+```bash
+npm run build
+php artisan route:list --path=api
+php artisan test
+```
+
+### Fork de entrega
+
+Repositorio forkeado:
+
+```txt
+https://github.com/HugoX2024/project_final_analisis_sistemas_Uno
+```
